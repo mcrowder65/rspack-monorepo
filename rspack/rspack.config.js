@@ -1,7 +1,7 @@
 /**
  * @type {import('@rspack/cli').Configuration}
  */
-const path = require("path");
+const path = require("path")
 module.exports = {
   context: __dirname,
   entry: {
@@ -46,14 +46,16 @@ module.exports = {
   },
   module: {
     rules: [
-      // {
-      //   test: /\.js$/,
-      //   type: "jsx",
-      // },
+      //  https://github.com/web-infra-dev/rspack/issues/2262#issuecomment-1473716951
+      {
+        test: /\.js$/,
+        type: "jsx",
+        include: [/src/, /some other path/],
+      },
       {
         test: /\.svg$/,
         type: "asset",
       },
     ],
   },
-};
+}

@@ -1,6 +1,6 @@
 import React from "react"
-import { Link } from "react-router-dom"
 import styled from "@emotion/styled"
+import Button from "shared/src/button"
 const P = styled.p``
 const Container = styled.div`
   ${P} {
@@ -12,7 +12,8 @@ const Container = styled.div`
 const One = () => {
   return (
     <Container>
-      <P>I am one!!!</P>
+      <P>I am onadfa!</P>
+      <Button>I am button</Button>
     </Container>
   )
 }
