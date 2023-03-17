@@ -1,0 +1,28 @@
+{
+  "name": "rspack-react-starter",
+  "workspaces": [
+    "shared",
+    "rspack",
+    "cra"
+  ],
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "start": "rspack serve",
+    "build": "rspack build"
+  },
+  "dependencies": {
+    "@emotion/react": "11.9.3",
+    "@emotion/styled": "11.9.3",
+    "@types/react-router-dom": "^5.3.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-router-dom": "5.3.0"
+  },
+  "devDependencies": {
+    "@rspack/cli": "latest",
+    "@types/react": "17.0.2",
+    "@types/react-dom": "17.0.2",
+    "serve": "^14.2.0"
+  }
+}
