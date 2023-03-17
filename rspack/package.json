@@ -1,0 +1,13 @@
+{
+  "name": "rspack",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "start": "rspack serve",
+    "build": "rspack build"
+  }
+}
