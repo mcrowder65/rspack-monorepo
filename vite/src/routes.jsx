@@ -1,12 +1,12 @@
 import React from "react"
-import { BrowserRouter, Route, Switch } from "react-router-dom"
+import { Route, Switch } from "react-router-dom"
 
 function Suspense({ fallback, children }) {
   return <React.Suspense fallback={fallback}>{children}</React.Suspense>
 }
 
-const LazyTwo = React.lazy(() => import("./two"))
-const LazyOne = React.lazy(() => import("./one"))
+const LazyTwo = React.lazy(() => import("src/two"))
+const LazyOne = React.lazy(() => import("src/one"))
 
 const One = (props) => (
   <Suspense fallback={null}>
